@@ -1,0 +1,115 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+#membership-wii-form-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #fcfcfc;
+  padding: 20px 50px 40px;
+  box-shadow: 1px 4px 10px 1px #aaa;
+  font-family: sans-serif;
+}
+
+#membership-wii-form-wrapper * {
+  box-sizing: border-box;
+  font-family: Cairo;
+}
+
+#membership-wii-form-wrapper h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#membership-wii-form-wrapper h5 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#membership-wii-form-wrapper input {
+  margin-bottom: 15px;
+}
+
+#membership-wii-form-wrapper input[type="text"] {
+  display: block;
+  height: 32px;
+  padding: 6px 16px;
+  width: 100%;
+  border: none;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+#membership-wii-form-wrapper label {
+  color: #777;
+  font-size: 0.8em;
+}
+
+#membership-wii-form-wrapper input[type="submit"] {
+  display: block;
+  margin: 20px auto 0;
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: #eee;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 1px 4px 10px 1px #aaa;
+
+  background: #207cca; /* Old browsers */
+  background: -moz-linear-gradient(left, #207cca 0%, #9f58a3 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #207cca 0%, #9f58a3 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #207cca 0%,
+    #9f58a3 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#9f58a3',GradientType=1 ); /* IE6-9 */
+}
+
+#membership-wii-form-wrapper .records {
+  margin: 20px auto;
+  color: #777;
+  font-size: 1em;
+}
+
+/* List Style */
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background: linear-gradient(to right, #207cca 0%, #9f58a3 100%);
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #207cca;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #9f58a3;
+}

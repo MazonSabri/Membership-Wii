@@ -1,0 +1,161 @@
+/**
+* All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+#members-options-tile {
+  font-size: 2em;
+  text-align: center;
+  margin: 36px auto;
+}
+
+.table-members * {
+  font-family: Cairo;
+}
+
+.table-members {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  max-width: 1280px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Style */
+/* Style the form - display items horizontally */
+.member-add-edit {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 20px auto;
+}
+
+/* Add some margins for each label */
+.member-add-edit label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.member-add-edit input,
+.member-add-edit select {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.member-add-edit input[type="date"],
+.member-add-edit select {
+  min-width: 150px;
+}
+/* Style the submit button */
+.member-add-edit button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #207cca 0%, #9f58a3 100%);
+  border: 1px solid rgb(174, 170, 170);
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: #eee;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 1px 4px 10px 1px #aaa;
+  line-height: 19px;
+}
+
+.member-add-edit button:hover {
+  background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .member-add-edit input {
+    margin: 10px 0;
+  }
+
+  .member-add-edit {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* List Style */
+
+.styled-table-members {
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 1.2em;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.styled-table-members thead tr {
+  background: linear-gradient(to top, #207cca 25%, #9f58a3 100%);
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table-members th,
+.styled-table-members td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.styled-table-members tbody tr {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.styled-table-members tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table-members tbody tr:last-of-type {
+  border-bottom: 2px solid #207cca;
+}
+.styled-table-members tbody tr.active-row {
+  font-weight: bold;
+  color: #9f58a3;
+}
+
+.styled-table-members button.member-edit,
+.styled-table-members button.member-delete {
+  color: #fff;
+  border: 1px solid #777;
+  border-radius: 4px;
+  padding: 2px 9px;
+  min-width: 16px;
+  margin: 0 5px;
+}
+
+.styled-table-members button.member-edit {
+  background-color: #207cca;
+}
+
+.styled-table-members button.member-delete {
+  background-color: #9f58a3;
+}
+
+.members-pagination li.pagination-next a,
+.members-pagination li.pagination-previous a {
+  visibility: hidden;
+  padding: 0;
+  line-height: 0;
+  width: 36px;
+}
+
+.members-pagination li.pagination-next a:after {
+  content: "?";
+  visibility: visible;
+  padding: 0.5em;
+  font-size: 1em;
+  line-height: 1em;
+  display: block;
+  border: 1px solid #dfdbdf;
+}
